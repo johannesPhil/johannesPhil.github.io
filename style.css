@@ -1,0 +1,337 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+table{
+    background-color: #2b4666;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: 100%;
+    
+    height: auto;
+    overflow: auto;
+}
+
+ul, li{
+    list-style: none;
+    padding-inline-start: 0;
+}
+h1{
+    text-align: justify;
+    color: goldenrod;
+}
+h2, h4{
+    margin: 0;
+    color: goldenrod;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+}
+h2::after, h4::after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px goldenrod;
+}
+section#bio{
+    font-size: 1em;
+    color: rgb(146, 143, 143);
+    background-color: #2b4666;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 1px rgba(185, 184, 184, .8);
+}
+.bio-container{
+    padding: 20% 5%;
+}
+.bio-container p{
+    font-size: 1.2em;
+    color: #fff;
+}
+.bio-pic{ 
+    background-color: goldenrod;
+    margin-top: 5em;
+}
+.bio-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.bio-info{
+    width: 100%;
+    margin: auto;
+    height:auto;
+}
+.bio-info li{
+    width: 100%;
+}
+.bio-info p{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.bio-item{
+    font-weight: bold;
+    color: goldenrod;
+}
+.bio-detail,.bio-detail a{
+    color: #fff;
+    line-height: 2em;
+}
+
+.details{
+    background-color: #2b4666;
+    color: #fff;
+}
+
+.desc{
+    font-size: 1.1em;
+    line-height: 2em;
+}
+.desc li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0;
+    border-bottom: solid 1px goldenrod;
+}
+.desc li a{
+    line-height: 0;
+}
+.year{
+    font-weight: bold;
+}
+#skills label{
+    display: block;
+}
+.progress{
+    width: 100%;
+    padding: 0 10%;
+}
+progress{
+    width: 100%;
+    background-color: #2b4666;
+}
+progress::-webkit-progress-value{
+    -webkit-appearance: none;
+    background-color: goldenrod;
+}
+progress::-moz-progress-value{
+    -moz-appearance: none;
+    background-color: goldenrod;
+}
+progress::-o-progress-value{
+    -o-appearance: none;
+    background-color: goldenrod;
+}
+form.desc{
+    box-sizing: content-box;
+    overflow: hidden;
+}
+input, textarea{
+    padding: 0 1em;
+    border: solid 1px #858484;
+    border-radius: 5px;
+}
+input:hover, textarea:hover{
+    box-shadow: 2px 1px 5px 1px rgba(185, 184, 184, .8);
+}
+.form-content{
+    width: 100%;
+    height: 10vh;
+    margin: 2vh 0;
+}
+.form-content label{
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+.form-content input{
+    width: 100%;
+    height: 50%;
+}
+.split-input-container{
+    width: 100%;
+    height: 100%;
+}
+.split-input{
+    width: 45%;
+    height: 8vh;
+}
+.split-input input, .split-input label{
+    margin: 0;
+}
+textarea{
+    width: 100%;
+}
+button{
+   width: 30%;
+   height: 6vh;
+   background-color: goldenrod;
+   color: #fff;
+   border: none;
+   font-size: 1.1em;
+   transition: ease 1s; 
+}
+button:hover{
+    background-color: #fff;
+    color: #2b4666;
+}
+@media screen and (min-width: 320px) {
+    .wrapper{
+        
+    }
+    nav{
+        display: none;
+    }
+    main{
+        display: block;
+    }
+    section#bio{
+        width: 100%;
+        border-radius: 0;
+        padding: 0 10%;
+    }
+    .m{
+        display: inline-block;
+    }
+    .d{
+        display: none;
+    }
+    .details{
+        width: 100%;
+        padding: 10%;
+    }
+    .bio-pic{
+        width: 60vw;
+        height: 60vw;
+        padding: .7%;
+        border-radius: 50%;
+        margin: auto;
+    }
+    input, textarea{
+        border-radius: 0;
+    }
+    .split-input-container{
+        display: block;
+    }
+    .split-input{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+        display: block;
+        width: 100%;
+        padding: 0 10%;
+        height: 5em;
+        margin-bottom: 5vh;
+        background-color: #fff;
+        border-bottom: solid 1px goldenrod;
+    
+    }
+    nav ul{
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding-inline-start: 0;
+    }
+    nav ul li{
+        display:block;
+        width: 20%;
+        height: 5em;
+    }
+    
+    .nav-link{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 1.5em 0;
+        text-align: center;
+        line-height: 2em;
+        text-transform: uppercase;
+        color: #494a4b;
+        font-weight: bold;
+    }
+    .nav-link:hover{
+        background-color: goldenrod;
+        color: #fff;
+    }
+    .is-active{
+        background-color: goldenrod;
+        color: #fff;
+    }
+    .details{
+        display: none;
+        width: 60%;
+        padding: 2.5%;
+        height: auto;
+        overflow: auto;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px 1px rgba(185, 184, 184, .8);
+    }
+    .is-visible{
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    section#bio{
+        width: 20%;
+        padding: .5%;
+        border-radius: 10px;
+    }
+    .bio-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .m{
+        display: none;
+    }
+    .d{
+        display: inline-block;
+    }
+    .bio-pic{
+        width: 12vw;
+        height: 12vw;
+        padding: .7%;
+        border-radius: 50%;
+    }
+    .split-input-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .split-input{
+        width: 45%;
+    }
+}
